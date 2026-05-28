@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Again! | QuadResearch</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --accent: #38bdf8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: white;
+            text-align: center;
+        }
+        .brand {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            font-weight: 800;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            max-width: 650px;
+            margin: 20px auto 0 auto;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+        }
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            text-align: left;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #1e3a8a;
+            font-size: 1.5rem;
+        }
+        .cta-section {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 14px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+        }
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.6);
+        }
+        .email-text {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #64748b;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">QuadResearch</div>
+        <h1>Dance Again!</h1>
+        <p class="tagline">Restoring mobility through non-invasive, head-controlled assistive technology.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>The Mission</h2>
+                <p>We bridge the gap between human intention and mechanical movement. By leveraging advanced EEG signal processing and upper-body tracking, Dance Again! empowers individuals to control robotic exoskeletons seamlessly and non-invasively.</p>
+            </div>
+
+            <div class="card">
+                <h2>The Technology</h2>
+                <p>Our framework interprets real-time neural telemetry and ergonomic motion sensors. This translates user gestures into fluid, precise mechanical control commands, completely bypassing traditional physical interfaces.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Join Our Research</h2>
+            <p style="color: #64748b; max-width: 600px; margin: 0 auto 25px auto;">We are actively looking for collaborators, researchers, and institutions interested in expanding the horizons of assistive tech.</p>
+            <a href="mailto:anandkumar.me@iitb.ac.in" class="cta-btn">Connect for Collaboration</a>
+            <div class="email-text">Or reach out directly at: <strong>anandkumar.me@iitb.ac.in</strong></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 QuadResearch. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
